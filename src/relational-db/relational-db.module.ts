@@ -25,10 +25,7 @@ export class RelationalDbModule {
     return {
       module: RelationalDbModule,
       global: isGlobal,
-      imports: [
-        TypeOrmModule.forRootAsync(typeormAsyncOptions),
-        ...options.imports,
-      ],
+      imports: [TypeOrmModule.forRootAsync(typeormAsyncOptions)],
       providers: [RelationalDbService],
       exports: [RelationalDbService],
     };
