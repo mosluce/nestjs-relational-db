@@ -1,2 +1,2 @@
-export * from './winston-logger/winston-logger.module';
-export * from './winston-logger/winston-logger.service';
+export * from './relational-db/relational-db.module';
+export * from './relational-db/relational-db.service';

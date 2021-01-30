@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { WinstonLoggerModule } from './winston-logger/winston-logger.module';
+import { RelationalDbModule } from './relational-db/relational-db.module';
 
 @Module({
-  imports: [WinstonLoggerModule],
+  imports: [RelationalDbModule],
   controllers: [],
   providers: [],
 })

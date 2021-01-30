@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { WinstonLoggerService } from './winston-logger.service';
+import { RelationalDbService } from './relational-db.service';
 
-describe('WinstonLoggerService', () => {
-  let service: WinstonLoggerService;
+describe('RelationalDbService', () => {
+  let service: RelationalDbService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [WinstonLoggerService],
+      providers: [RelationalDbService],
     }).compile();
 
-    service = module.get<WinstonLoggerService>(WinstonLoggerService);
+    service = module.get<RelationalDbService>(RelationalDbService);
   });
 
   it('should be defined', () => {
