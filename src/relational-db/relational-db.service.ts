@@ -1,11 +1,13 @@
 import { WinstonLoggerService } from '@ccmos/nestjs-winston-logger';
-import { Injectable } from '@nestjs/common';
+import { Injectable, Optional } from '@nestjs/common';
 import { Connection, EntityManager } from 'typeorm';
 
 @Injectable()
 export class RelationalDbService {
   constructor(
     private connection: Connection,
+
+    @Optional()
     private logger?: WinstonLoggerService,
   ) {
     this.logger.setContext(RelationalDbService.name);
